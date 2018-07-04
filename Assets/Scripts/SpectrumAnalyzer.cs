@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent(typeof(AudioSource))]
 public class SpectrumAnalyzer : MonoBehaviour {
 
 	// Use this for initialization
