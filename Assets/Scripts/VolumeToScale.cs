@@ -17,7 +17,7 @@ public class VolumeToScale : MonoBehaviour {
         AudioListener.GetOutputData(waveData, 1);
         var volume = waveData.Select(x => x * x).Sum() / waveData.Length;
         //transform.localScale = new Vector3(1, volume * 100, 1);
-        GetComponent<RectTransform>().sizeDelta = new Vector2(100, volume * 50000);
+        GetComponent<RectTransform>().sizeDelta = new Vector2(100, volume * 5000);
         GetComponent<RectTransform>().localPosition = new Vector3(0, GetComponent<RectTransform>().sizeDelta.y / 2 - 50, 0);
     }
 }
